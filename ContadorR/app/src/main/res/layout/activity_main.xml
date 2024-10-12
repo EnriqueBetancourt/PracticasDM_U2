@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_below="@+id/btnToast"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/blue"
+        android:onClick="contar"
+        android:text="@string/button_label_count"
+         />
+
+    <Button
+        android:id="@+id/btnToast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="-1dp"
+        android:backgroundTint="@color/yellow"
+        android:textColor="@color/blue"
+        android:onClick="showText"
+        android:text="@string/button_label_toast"
+         />
+
+    <TextView
+        android:id="@+id/labelCount"
+        android:layout_width="wrap_content"
+        android:layout_height="276dp"
+        android:layout_below="@+id/btnToast"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="-6dp"
+        android:layout_weight="2"
+        android:background="@color/green"
+        android:gravity="center_horizontal|center_vertical"
+        android:rotation="0"
+        android:text="@string/button_initial_value"
+        android:textColor="@color/yellow"
+        android:textSize="@dimen/_160sp" />
+
+
+</RelativeLayout>
